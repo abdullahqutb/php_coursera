@@ -6,7 +6,7 @@ Building Web Applications with PHP - Michigan University - Coursera
 * Why learn PHP?
 * Course contents
 
-# [a relative link] week2
+# [week2] 
 * HTML
 
 # Week 3
