@@ -1,11 +1,11 @@
 <?php
 $md5 = "Not computed";
-if ( isset($_GET['encode']) ) {
+if (isset($_GET['encode'])) {
     $md5 = hash('md5', $_GET['encode']);
 }
 ?>
 <!DOCTYPE html>
-<head><title>Charles Severance MD5</title></head>
+<head><title>Sayed Abdullah Qutb MD5 Maker</title></head>
 <body>
 <h1>MD5 Maker</h1>
 <p>MD5: <?= htmlentities($md5); ?></p>

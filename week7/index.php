@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<head><title>Charles Severance MD5 Cracker</title></head>
+<head><title>Sayed Abdullah Qutb MD5 Cracker</title></head>
 <body>
 <h1>MD5 cracker</h1>
 <p>This application takes an MD5 hash
-of a four-character lower case string and
-attempts to hash all four-character combinations
-to determine the original four characters.</p>
+of a four-digit PIN and
+attempts to hash all four-digit combinations
+to determine the original four-digit PIN</p>
 <pre>
-Debug Output:
 <?php
 $goodtext = "Not found";
 // If there is no parameter, this code is all skipped
