@@ -6,20 +6,20 @@ Building Web Applications with PHP - Michigan University - Coursera
 * Why learn PHP?
 * Course contents
 
-# Week 2
+# [Week 2](https://github.com/abdullahqutb/php_coursera/tree/master/week2) 
 * HTML
 
-# Week 3
+# [Week 3](https://github.com/abdullahqutb/php_coursera/tree/master/week3)
 * CSS
 
-# Week 4
+# [Week 4](https://github.com/abdullahqutb/php_coursera/tree/master/week4)
 * HTML and CSS together
 
-# Week 5
+# [Week 5](https://github.com/abdullahqutb/php_coursera/tree/master/week5)
 * PHP Intro
 
-# Week 6
+# [Week 6](https://github.com/abdullahqutb/php_coursera/tree/master/week6)
 * More PHP
 
-# Week 7
+# [Week 7](https://github.com/abdullahqutb/php_coursera/tree/master/week7)
 * And more PHP again
