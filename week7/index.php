@@ -66,7 +66,7 @@ if (isset($_GET['md5'])) {
 </pre>
 <!-- Use the very short syntax and call htmlentities() -->
 <p>Original Text: <?= htmlentities($goodtext); ?></p>
-<form>
+<form method="GET">
 <input type="text" name="md5" size="40" />
 <input type="submit" value="Crack MD5"/>
 </form>
@@ -78,5 +78,41 @@ if (isset($_GET['md5'])) {
 href="https://github.com/csev/wa4e/tree/master/code/crack"
 target="_blank">Source code for this application</a></li>
 </ul>
+<form class="" method="POST">
+  <p>
+    <label>Email:</label>
+    <input type="email" name="email" value="">
+  </p>
+  <input type="radio" name="radio" value="RADIO" checked>RADIO 1<br>
+  <input type="radio" name="radio" value="RADIO1">RADIO 2<br>
+  <input type="search" name="search" value="SEARCH"><br>
+  <input type="submit" name="submit" value="SUBMIT"><br>
+  <input type="checkbox" name="chk1" value="CHK 1">CHECK 1<br>
+  <input type="checkbox" name="chk2" checked>CHECK 2<br>
+  <select class="" name="select">
+    <option value="0">-- Please Select --</option>
+    <option value="option 1" disabled>OPTION 1</option>
+    <option value="option 1">OPTION 1</option>
+  </select><br> <br>
+  <label for="textarea">HERE <br>
+    <textarea name="textarea" rows="8" cols="80" lang="fa"></textarea> <br>
+  <select multiple name="multiple[]">
+    <option value="one">ONE</option>
+    <option value="two">TWO</option>
+    <option value="three">THREE</option>
+  </select>
+  <p>
+    <input type="submit" name="submit" value="SUBMIT2"> <br>
+    <input type="button" name="button" value="NOTHING" onclick="location.href='https://google.com'; return false;">
+  </p>
+
+</form>
+<pre>
+  <?php
+  if (isset($_POST)) {
+      print_r($_POST);
+  }
+  ?>
+</pre>
 </body>
 </html>
