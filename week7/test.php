@@ -7,6 +7,7 @@
   <body>
     <pre>
       <?php
+
         // echo $var;
         foreach ($_POST as $key => $value) {
             if ($key != 'submit') {
