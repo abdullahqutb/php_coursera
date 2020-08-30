@@ -19,7 +19,6 @@ if (isset($_POST['logout'])) {
     $password = $_POST['pass'];
     $temp = $salt.$password;
     $try = hash('md5', $temp);
-    echo $try;
     if ($stored_hash == $try) {
         echo "YESSSS" . "\n";
         header("Location: game.php?name=".urlencode($_POST['who']));
@@ -39,12 +38,13 @@ if (isset($_POST['logout'])) {
  <html lang="en" dir="ltr">
    <head>
      <meta charset="utf-8">
-     <title>Rock, Paper, Scissors LOGIN PAGE</title>
+     <title>Sayed Abdullah Qutb - b56d9d8b - Rock, Paper, Scissors LOGIN PAGE</title>
    </head>
    <body>
-     <div style="margin: 10px 20px 0 20px;">
-       <h1 style="text-align: center; margin-bottom: 50px;">LOG IN</h1>
+     <div>
+       <h1>Please Log In</h1>
        <form action="login.php" method="post">
+         <h3 style="color: red;"><?= $error ?></h3>
          <p>
            Username:
            <input type="text" name="who" value="" required>
@@ -53,9 +53,8 @@ if (isset($_POST['logout'])) {
            Password:
            <input type="password" name="pass" value="" required>
          </p>
-         <input type="submit" name="login" value="LOGIN">
+         <input type="submit" name="login" value="Log In">
        </form>
-       <h3 style="text-align: center; color: red;"><?= $error ?></h3>
      </div>
    </body>
  </html>
